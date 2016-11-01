@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script type="module">
+    import sample from './js/sampleModule/sample';
+    import {foo} from './js/util/util';
+
+    sample.method();
+    foo();
+  </script>
+  <script src="../main/js/moduleLoader/ModuleLoader.js"></script>
+  <!--<script src="../main/js/moduleLoader/RequireLoader.js"></script>-->
+  <!--<script src="../main/js/moduleLoader/AliasLoader.js"></script>-->
+  <script src="../main/js/moduleLoader/DOMModuleLoader.js"></script>
+</head>
+<body>
+  <h1>Demo</h1>
+  <pre>
+      // define a module on page
+      &lt;script type="module"&gt;
+        import sample from './js/sampleModule/sample';
+        import {foo} from './js/util/util';
+        sample.method();
+        foo();
+      &lt;/script&gt;
+      &lt;script src="../main/js/moduleLoader/ModuleLoader.js"&gt;&lt;/script&gt;
+      &lt;script src="../main/js/moduleLoader/DOMModuleLoader.js"&gt;&lt;/script&gt;
+  </pre>
+</body>
+</html>
